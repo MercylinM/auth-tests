@@ -1,5 +1,5 @@
 async function login(e) {
-    e.preventDefault();
+    // e.preventDefault();
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
@@ -19,7 +19,7 @@ async function login(e) {
 }
 
 async function signup(e) {
-    e.preventDefault();
+    // e.preventDefault();
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
@@ -33,3 +33,5 @@ async function signup(e) {
     alert(data.message);
     if (res.ok) window.location.href = 'login.html';
 }
+
+module.exports={ login, signup}
